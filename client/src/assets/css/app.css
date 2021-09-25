@@ -1,0 +1,132 @@
+:root {
+  --bg: #242426;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 50px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 500ms; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: var(--text-color);
+  text-decoration: none; }
+
+.navbar-menu-item {
+  width: calc(--var(--nav-size) * 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.navbar-menu-item:hover {
+  background-color: #525337; }
+
+.navbar-menu {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.icon-button {
+  --button-size: calc(var(--nav-size) * 0.5);
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: #484a4d;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  transition: filter 300ms; }
+
+.icon-button:hover {
+  filter: brightness(1.5); }
+
+.icon-button svg {
+  fill: var(--text-color);
+  width: 20px;
+  height: 20px; }
+
+.profile-user {
+  position: absolute;
+  top: 45px;
+  width: 300px;
+  transform: translateX(-45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  z-index: 2;
+  overflow: hidden; }
+
+.profile-icon-left {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius); }
+
+.profile-item {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem; }
+
+.profile-item:hover {
+  background-color: #525357;
+  text-decoration: none;
+  color: var(--text-color); }
+
+/* Post button */
+.post-button {
+  padding-top: 0;
+  background: transparent;
+  border: none; }
+
+.post-button:hover {
+  background: transparent; }
+
+a.post-button.btn:focus,
+a.post-button.btn:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none; }
+
+button.post-button.btn:focus,
+button.post-button.btn:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none; }
+
+.btn-floating {
+  position: relative;
+  float: right;
+  right: 30px;
+  bottom: 0px;
+  background: transparent;
+  border: none; }
+
+.btn-floating:hover {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none; }
+
+.btn-floating:focus,
+.btn-floating:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  box-shadow: none; }
+
+.icon-post {
+  background-color: #248d1b;
+  border-radius: 1.5rem;
+  background: transparent; }

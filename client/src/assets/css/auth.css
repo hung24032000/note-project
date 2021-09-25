@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.body-login {
+  background: url(../images/background-login.jpg) no-repeat center center/cover;
+  height: 100vh; }
+  .body-login .body__element {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%; }
+    .body-login .body__element .container-app {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-content: center;
+      text-align: center; }
+      .body-login .body__element .container-app .container-app__element {
+        color: #fff; }
+      .body-login .body__element .container-app .container-app-form {
+        width: 25%;
+        margin: 0 auto; }
+
+.custom-text-label-color {
+  color: #fff; }
